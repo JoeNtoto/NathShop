@@ -1,3 +1,6 @@
+<?php 
+    include('_config.php');
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -18,8 +21,8 @@
                 <option value="4">4</option>
                 <option value="5">5</option>
             </select>
-            <p>Tarif : 20 euros</p>
-            <p>En commandant maintenant, vous aurez droit à une remise immediate de 5 euros</p>
+            <p>Tarif : <span class="orangered"><?= TARIF; ?> euros </span></p>
+            <p><span class="orangered"> En commandant maintenant, vous aurez droit à une remise immediate de <?= REMISE; ?> euros</span></p>
             <p><input type="submit" value="Commander"></p>
         </form>
         <img src="images/chocolat.jpg" alt="Chocolat">
